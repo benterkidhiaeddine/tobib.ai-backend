@@ -1,8 +1,8 @@
 # tobib.io-api
 
-    This is the backend for the AI challenge proposed in the dev fest hackathon That I compted in from 12/12/2023 to 13/12/2023
-    A link to the challenge premise along side a starter boilerplate code to solve this probleme is found on https://github.com/BIGmama-technology/Community-devfest-2023-challange
-    I have not used the fastAPI starter code and decided to solve it using the django Rest Framework to develop the API
+This is the backend for the AI challenge proposed in the dev fest hackathon That I compted in from 12/12/2023 to 13/12/2023
+A link to the challenge premise along side a starter boilerplate code to solve this probleme is found on https://github.com/BIGmama-technology/Community-devfest-2023-challange
+I have not used the fastAPI starter code and decided to solve it using the django Rest Framework to develop the API
 
 ## Installation
 
