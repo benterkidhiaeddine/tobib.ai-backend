@@ -1,0 +1,1 @@
+pip freeze --local > requirements-lock.txt

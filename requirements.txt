@@ -1,0 +1,8 @@
+django
+djangorestframework
+django-cors-headers
+langchain
+huggingface_hub
+drf-yasg[validation]
+drf-yasg-json-api
+python-dotenv
