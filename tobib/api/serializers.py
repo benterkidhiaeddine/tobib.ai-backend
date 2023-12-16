@@ -57,6 +57,12 @@ class ChatBotRoomMessageSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class CreateChatBotRoomMessageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChatBotRoomMessage
+        fields = ["text_content"]
+
+
 # Create BotChatRoom Serializer
 class ChatBotRoomSerializer(serializers.ModelSerializer):
     class Meta:

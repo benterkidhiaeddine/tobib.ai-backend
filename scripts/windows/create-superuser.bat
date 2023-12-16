@@ -1,1 +1,1 @@
-python .\tobib\manage.py createsuperuser --email admin@example.com
+python .\tobib\manage.py createsuperuser --username admin@example.com

@@ -117,6 +117,15 @@ def chat_bot_rooms_list(request):
 
 
 # Get Messages for a specefic chat room for the current user
+@swagger_auto_schema(
+    method="get",
+    responses={"200": ChatBotRoomMessageSerializer, "404": "Room not found"},
+)
+@swagger_auto_schema(
+    method="post",
+    request_body=CreateChatBotRoomMessageSerializer,
+    responses={"201": ChatBotRoomMessageSerializer, "404": "Room not found"},
+)
 @api_view(["GET", "POST"])
 @permission_classes([IsAuthenticated])
 def room_messages_list(request, chat_bot_room_id):
@@ -133,7 +142,7 @@ def room_messages_list(request, chat_bot_room_id):
 
     elif request.method == "POST":
         serializer = ChatBotRoomMessageSerializer(
-            data={**request.data, "chat_room": chat_bot_room.id}
+            data={**request.data, "chat_room": chat_bot_room.id, "is_bot": False}
         )
 
         message_content = request.data["text_content"]
